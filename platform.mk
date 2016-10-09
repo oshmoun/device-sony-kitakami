@@ -20,6 +20,10 @@ SOMC_PLATFORM := kitakami
 
 SONY_ROOT := device/sony/kitakami/rootdir
 
+# TWRP fstab
+PRODUCT_COPY_FILES += \
+    $(SONY_ROOT)/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # Media
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/system/etc/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt \
@@ -67,7 +71,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
-    Tag
+    Tag \
+    nfc_nci.pn54x.default
 
 # Audio
 PRODUCT_PACKAGES += \
