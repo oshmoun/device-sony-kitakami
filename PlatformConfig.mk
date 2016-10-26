@@ -76,7 +76,7 @@ BOARD_CUSTOM_BT_CONFIG := device/sony/kitakami/bluetooth/vnd_generic.txt
 TARGET_PER_MGR_ENABLED := true
 
 # NFC
-NFC_NXP_CHIP_TYPE := PN547C2
+BOARD_NFC_CHIPSET := pn547
 
 # FM definitions for Broadcom solution
 BOARD_HAVE_ALTERNATE_FM := true
